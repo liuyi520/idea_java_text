@@ -75,6 +75,7 @@ public class ArrayListText   {
         Iterator<String> it = list.iterator();
         while (it.hasNext()){
             if ("小白".equals(it.next())){
+                //当使用迭代器时  删除元素要使用迭代器对象  而不能是集合对象
                 it.remove();
             }
             System.out.println(it.next());
