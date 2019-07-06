@@ -15,15 +15,13 @@ public  class TextMain    {
 
     public static void main(String[] args) {
 
-        String [] names = new String[]{"1","2","3"};
+     /*   String [] names = new String[]{"1","2","3"};
         ArrayList <String> list = alt.listAddArray(names);
         for (String s : list) {
             System.out.println(s);
-        }
-      MyObj obj = new MyObj();
+        }*/
+        max(new int []{6,3,8,223,43,234});
 
-
-        Text01();
 
     }
 
@@ -40,6 +38,31 @@ public  class TextMain    {
 
         for (Object o : list) {
             System.out.println(o.toString());
+        }
+    }
+
+    /**
+     * 冒泡排序
+     * @param array
+     */
+    public static  void max( int [] array){
+
+        int num = 0 ;
+
+        for (int i = 0; i < array.length; i++) {
+
+            for (int j = 0; j < array.length - i - 1; j++) {
+
+                if(array[j] > array[j+1]){
+                    num = array[j];
+                    array[j] = array[j+1];
+                    array[j+1] = num;
+                }
+            }
+        }
+
+        for (int i1 : array) {
+            System.out.println(i1);
         }
     }
 
