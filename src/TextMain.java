@@ -1,4 +1,5 @@
 import listText.ArrayListText;
+import listText.MyObj;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +20,7 @@ public  class TextMain    {
         for (String s : list) {
             System.out.println(s);
         }
+      MyObj obj = new MyObj();
 
 
         Text01();

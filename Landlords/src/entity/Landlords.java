@@ -1,5 +1,6 @@
 package entity;
-
+import entity.Player;
+import entity.Poker;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -43,7 +44,7 @@ public class Landlords {
         Collections.shuffle(list);
     }
 
-    public void  fapai(List<Poker> pokers,List<Player> players){
+    public void  fapai(List<Poker> pokers, List<entity.Player> players){
 
         for (int i = 0; i < pokers.size()-3; i++) {
             if(i % 3 ==0){
@@ -66,7 +67,7 @@ public class Landlords {
      * 看牌
      * @param player
      */
-    public void  show(Player player){
+    public void  show(entity.Player player){
 
         List<Poker> list = player.getList();
 

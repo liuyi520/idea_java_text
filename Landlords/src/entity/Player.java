@@ -1,5 +1,6 @@
 package entity;
-
+import entity.Player;
+import entity.Poker;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -61,11 +62,11 @@ public class Player {
         this.money = money;
     }
 
-    public List<Poker> getList() {
+    public List<entity.Poker> getList() {
         return list;
     }
 
-    public void setList(List<Poker> list) {
+    public void setList(List<entity.Poker> list) {
         this.list = list;
     }
 }
