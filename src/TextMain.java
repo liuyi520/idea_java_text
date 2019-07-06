@@ -1,6 +1,7 @@
 import listText.ArrayListText;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author liuyi
@@ -13,8 +14,14 @@ public  class TextMain    {
 
     public static void main(String[] args) {
 
-               alt.delete();
+        String [] names = new String[]{"1","2","3"};
+        ArrayList <String> list = alt.listAddArray(names);
+        for (String s : list) {
+            System.out.println(s);
+        }
 
+
+        Text01();
 
     }
 
@@ -24,29 +31,17 @@ public  class TextMain    {
     public static  void  Text01(){
 
 
-        int [] array = alt.getArrayInt(6,33);
-        ArrayList list = alt.listAddArray(array);
+        Integer [] array = alt.getArrayInt(6,33);
+
+        ArrayList list = new ArrayList();
+        list.addAll(List.of(array));
 
         for (Object o : list) {
             System.out.println(o.toString());
         }
     }
 
-    /**
-     * 随机生成20个数 到集合
-     * 把大集合中偶数 放入小集合中
-     * 并且打印
-     */
-    public static  void  Text02(){
 
-        System.out.println("--------------------Text02--------------------");
-        int [] array = alt.getArrayInt(20,99);
-        ArrayList list = alt.listISEven(alt.listAddArray(array));
-
-        for (Object o : list) {
-            System.out.println(o.toString());
-        }
-    }
 
 
 

@@ -18,9 +18,9 @@ public class ArrayListText   {
      * @param max 最大范围
      * @return
      */
-    public int[] getArrayInt(int num,int max){
+    public Integer[] getArrayInt(int num,int max){
 
-        int [] arrayInt = new int[num];
+        Integer [] arrayInt = new Integer[num];
         Random random = new Random();
 
         for (int i = 0; i < arrayInt.length; i++) {
@@ -90,15 +90,10 @@ public class ArrayListText   {
      * @param array 要添加的数组
      * @return
      */
-    public ArrayList listAddArray(int [] array){
+    public ArrayList listAddArray(Object [] array){
 
         ArrayList list = new ArrayList();
-
-        for (int i = 0; i < array.length; i++) {
-
-            list.add(array[i]);
-        }
-
+        list.addAll(List.of(array));
         return list;
 
     }
